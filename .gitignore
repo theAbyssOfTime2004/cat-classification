@@ -9,10 +9,16 @@ __pycache__/
 *.so
 .ipynb_checkpoints/
 
-# Data directories (IMPORTANT - don't commit images!)
-data/raw-data/
-data/cleaned-data/
-data/processed/
+# Ignore data folders (images, large files)
+data/
+data/*
+
+# Optionally ignore all image formats
+*.jpg
+*.png
+*.jpeg
+*.bmp
+*.tif
 
 # Model files (too large for git)
 models/*.keras
