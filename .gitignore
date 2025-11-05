@@ -1,2 +1,32 @@
-// filepath: .gitignore
+# Virtual Environment
 .venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+
+# Data directories (IMPORTANT - don't commit images!)
+data/raw-data/
+data/cleaned-data/
+data/processed/
+
+# Model files (too large for git)
+models/*.keras
+models/*.h5
+models/*.pt
+
+# Output directories
+outputs/
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
